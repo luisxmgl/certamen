@@ -24,10 +24,10 @@
   </header>
 
   <main>
-    <section id="sobre-mi ">
+    <section id="sobre-mi">
       <div class="presentacion">
         <div class="texto">
-          <h2>Hola,  soy Luis</h2>
+          <h2>Hola, soy Luis</h2>
           <h3>Estudiante de Ingeniería en Informática</h3>
           <p>Apasionado por la computación y la comida rápida.</p>
         </div>
@@ -36,13 +36,13 @@
 
       <div class="contenido">
         <article>
-          <h2>Sobre  mí</h2>
+          <h2>Sobre mí</h2>
           <p>Actualmente curso el tercer año de la carrera y me interesa mucho el desarrollo web front-end, aplicando HTML5, CSS3 y JavaScript.</p>
           <blockquote>«La imaginación es más importante que el conocimiento.» – Albert Einstein</blockquote>
         </article>
 
         <aside>
-          <h3>Datos  Personales</h3>
+          <h3>Datos Personales</h3>
           <ul>
             <li>Edad: 27 años</li>
             <li>Ciudad: Talcahuano, Chile</li>
@@ -52,6 +52,188 @@
         </aside>
       </div>
     </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+      <h3>Tecnologías y competencias</h3>
+      <table>
+        <tr>
+          <th>Tecnología</th>
+          <th>Nivel</th>
+          <th>Dominio</th>
+        </tr>
+        <tr>
+          <td>HTML5</td>
+          <td>Avanzado</td>
+          <td><div class="barra azul"></div></td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Intermedio-Alto</td>
+          <td><div class="barra verde"></div></td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Intermedio</td>
+          <td><div class="barra naranja"></div></td>
+        </tr>
+        <tr>
+          <td>Git / GitHub</td>
+          <td>Intermedio</td>
+          <td><div class="barra morado"></div></td>
+        </tr>
+        <tr>
+          <td>React</td>
+          <td>Básico</td>
+          <td><div class="barra rojo"></div></td>
+        </tr>
+      </table>
+
+      <div class="cajas">
+        <div class="caja">
+          <h3>Competencias Técnicas</h3>
+          <ul>
+            <li>Maquetación responsiva</li>
+            <li>Control de versiones con Git</li>
+            <li>Diseño con Flexbox y Grid</li>
+            <li>Accesibilidad web (WCAG)</li>
+          </ul>
+        </div>
+
+        <div class="caja">
+          <h3>Ruta de Aprendizaje</h3>
+          <ol>
+            <li>HTML5 y CSS3 (actual)</li>
+            <li>JavaScript ES6+</li>
+            <li>React.js</li>
+            <li>Node.js y Express</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+  <h3>Algunos de mis trabajos</h3>
+  <div class="grid-proyectos">
+    <figure class="card azul">
+      <div class="card-top">
+        <img src="img/icono1.png" alt="Landing Page">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>Landing Page</h4>
+        <p>Página de aterrizaje para producto digital con diseño moderno.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+    <figure class="card verde">
+      <div class="card-top">
+        <img src="img/icono2.png" alt="Blog Personal">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>Blog Personal</h4>
+        <p>Blog responsivo con sistema de artículos y categorías.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+    <figure class="card naranja">
+      <div class="card-top">
+        <img src="img/icono3.png" alt="Dashboard Admin">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>Dashboard Admin</h4>
+        <p>Panel de administración con gráficos y tablas de datos.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+    <figure class="card morado">
+      <div class="card-top">
+        <img src="img/icono4.png" alt="App Clima">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>App Clima</h4>
+        <p>Aplicación del clima con API externa y diseño responsivo.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+    <figure class="card rojo">
+      <div class="card-top">
+        <img src="img/icono5.png" alt="Tienda Online">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>Tienda Online</h4>
+        <p>E-commerce básico con catálogo de productos y carrito.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+    <figure class="card gris">
+      <div class="card-top">
+        <img src="img/icono6.png" alt="Portafolio v1">
+      </div>
+      <figcaption class="card-bottom">
+        <h4>Portafolio v1</h4>
+        <p>Primera versión de mi portafolio profesional.</p>
+        <a href="#">Ver repositorio →</a>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
   </main>
+  <section id="contacto">
+  <h2>Contacto</h2>
+  <h3>Envíame un mensaje</h3>
+  <div class="contacto-contenedor">
+    <!-- Formulario -->
+    <form class="formulario">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+
+      <label for="asunto">Asunto</label>
+      <select id="asunto" name="asunto" required>
+        <option value="">Selecciona un asunto</option>
+        <option value="consulta">Consulta</option>
+        <option value="proyecto">Proyecto</option>
+        <option value="otro">Otro</option>
+      </select>
+
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar mensaje</button>
+    </form>
+
+    <!-- Información de contacto -->
+    <aside class="info-contacto">
+      <h3>Información de contacto</h3>
+      <ul>
+        <li>📧 luis.inostroza24@inacapmail.com</li>
+        <li>📍 Talcahuano, Chile</li>
+        <li>📱 +56 9 1234 1234</li>
+        <li>🌐 github.com/luisxmgl</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-contenedor">
+    <div class="footer-logo">
+      <div class="circulo">LMIE</div>
+      <span>Luis Miguel Inostroza E.</span>
+    </div>
+    <div class="footer-redes">
+      <a href="https://github.com/luisxmgl" target="_blank">
+        <img src="img/githubiconoaqui.png" alt="GitHub" width="100" height="90">
+      </a>
+    </div>
+  </div>
+  <p>© 2026 Luis Inostroza. Todos los derechos reservados.</p>
+</footer>
+
+
 </body>
 </html>

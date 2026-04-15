@@ -2,14 +2,14 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #fafafa;
+  background: #b8b8b8; /* fondo gris */
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #337ff0;
+  background: #33f072;
   color: #fff;
   padding: 15px 40px;
 }
@@ -40,25 +40,27 @@ nav a {
 
 .presentacion {
   display: flex;
-  justify-content: space-between; 
+  justify-content: center;
   align-items: center;
-  background: #2a85fc;
+  background: #41a752;
   color: #fff;
-  padding: 30px;
+  padding: 40px;
   border-radius: 8px;
+  gap: 30px;
 }
 
 .presentacion .texto {
-  flex: 2;
+  flex: 1;
+  max-width: 400px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .presentacion .foto {
-  flex: 0;
   width: 150px;
   height: 150px;
   border-radius: 50%;
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-  margin-left: auto; 
 }
 
 .contenido {
@@ -66,7 +68,7 @@ nav a {
   gap: 40px;
   margin-top: 30px;
   background: #fff;
-  padding: 30px;
+  padding: 5px;
   border-radius: 8px;
 }
 
@@ -79,4 +81,259 @@ nav a {
   background: #f4f4f4;
   padding: 20px;
   border-radius: 8px;
+}
+
+#habilidades {
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+#habilidades h2, #habilidades h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#habilidades table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#habilidades th, #habilidades td {
+  border: 1px solid #ccc;
+  padding: 15px;
+  text-align: center;
+}
+
+#habilidades th {
+  background: #33f072;
+  color: #fff;
+}
+
+.barra {
+  height: 15px;
+  border-radius: 5px;
+}
+
+.azul { width: 80%; background: #007bff; }
+.verde { width: 80%; background: #28a745; }
+.naranja { width: 80%; background: #fd7e14; }
+.morado { width: 80%; background: #6f42c1; }
+.rojo { width: 80%; background: #dc3545; }
+
+.cajas {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.caja {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1;
+  max-width: 400px;
+}
+
+.caja ul, .caja ol {
+  margin: 0;
+  padding-left: 20px;
+}
+
+#proyectos {
+  padding: 40px;
+  background: #c5c5c5; /* fondo gris detrás de las cajas */
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+#proyectos h2, #proyectos h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  grid-auto-rows: 280px; /* altura única para todas las cajas */
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* ocupa toda la altura definida por el grid */
+}
+
+.card-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+.card-top img {
+  width: 50px;
+  height: 50px;
+}
+
+.card-bottom {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-bottom h4 {
+  margin: 0 0 8px 0;
+}
+
+.card-bottom p {
+  margin: 0 0 8px 0;
+  flex: 1;
+}
+
+.card-bottom a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card.azul .card-top { background: linear-gradient(135deg, #007bff, #3399ff); }
+.card.verde .card-top { background: linear-gradient(135deg, #28a745, #5cd65c); }
+.card.naranja .card-top { background: linear-gradient(135deg, #fd7e14, #ff9f40); }
+.card.morado .card-top { background: linear-gradient(135deg, #6f42c1, #9b59b6); }
+.card.rojo .card-top { background: linear-gradient(135deg, #dc3545, #ff5c75); }
+.card.gris .card-top { background: linear-gradient(135deg, #6c757d, #adb5bd); }
+
+
+#contacto {
+  padding: 40px;
+  background: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+}
+
+#contacto h2, #contacto h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contacto-contenedor {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.formulario {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario label {
+  font-weight: bold;
+  text-align: left;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+}
+
+.formulario button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background: #0056b3;
+}
+
+.info-contacto {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.info-contacto h3 {
+  margin-top: 0;
+}
+
+.info-contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-contacto li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo .circulo {
+  background: #fffbed;
+  color: #333;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-redes a {
+  margin: 0 8px;
+  display: inline-block;
+}
+
+.footer-redes img {
+  width: 80px;
+  height: 70px;
+  transition: transform 0.2s ease;
+}
+
+.footer-redes img:hover {
+  transform: scale(1.2);
 }
