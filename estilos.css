@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #fafafa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #337ff0;
+  color: #fff;
+  padding: 15px 40px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#sobre-mi {
+  padding: 40px;
+}
+
+.presentacion {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  background: #2a85fc;
+  color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.presentacion .texto {
+  flex: 2;
+}
+
+.presentacion .foto {
+  flex: 0;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  margin-left: auto; 
+}
+
+.contenido {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.contenido article {
+  flex: 2;
+}
+
+.contenido aside {
+  flex: 1;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
