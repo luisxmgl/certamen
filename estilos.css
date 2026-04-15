@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #b8b8b8; /* fondo gris */
+  background: #b8b8b8; 
 }
 
 header {
@@ -146,7 +146,7 @@ nav a {
 
 #proyectos {
   padding: 40px;
-  background: #c5c5c5; /* fondo gris detrás de las cajas */
+  background: #c5c5c5; 
   border-radius: 8px;
   margin-top: 31px;
 }
@@ -161,7 +161,7 @@ nav a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-  grid-auto-rows: 280px; /* altura única para todas las cajas */
+  grid-auto-rows: 280px;
 }
 
 .card {
@@ -169,7 +169,7 @@ nav a {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  height: 100%; /* ocupa toda la altura definida por el grid */
+  height: 100%; 
 }
 
 .card-top {
